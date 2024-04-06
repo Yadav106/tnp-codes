@@ -41,6 +41,17 @@ class LinkedList:
             temp_node.next = new_node
         self.length += 1
 
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        elif self.length == 1:
+            self.head = None
+            self.tail = None
+        else:
+            popped_node = self.head
+            self.head = self.head.next
+            popped_node.next = None
+
     def __str__(self):
         if self.head == None:
             return "Linked List is empty" 
@@ -64,4 +75,6 @@ print(ll)
 ll.prepend(-10)
 print(ll)
 ll.insert(1, -5)
+print(ll)
+ll.pop_first()
 print(ll)
