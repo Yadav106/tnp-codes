@@ -1,0 +1,10 @@
+3 * 3 = 9
+quantity = 3
+size = 3
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+first stack = [0, 1, 2] => (0 * size) to (0 * size - 1)
+second stack = [3, 4, 5] => (1 * size) to (2 * size - 1)
+third stack = [6, 7, 8] => (2 * size) to (3 * size - 1)
+
+max number of stacks = quantity
